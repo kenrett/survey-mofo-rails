@@ -1,0 +1,7 @@
+<h1>Index Page!</h1>
+
+<h3> <%= link_to "Create a new mofo!", new_survey_path %></h3>
+
+<% @surveys.each do |survey| %>
+  <p><%= link_to survey.title, survey_path(survey) %>
+<% end %>
